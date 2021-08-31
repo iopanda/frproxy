@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to FRPS 
+
+  form(action=".", method="post") 
+    table 
+      tr
+        td Key
+        td Value
+        td Comment
+      tr 
+        td Bind Address
+        td
+          input(type="text", name="bind_addr", value="#{bind_addr}")
+        td 服务端监听地址
+      tr 
+        td Bind Port
+        td 
+          input(type="text", name="bind_port", value="#{bind_port}")
+        td 服务端监听端口
+      tr 
+        td Bind UDP Port
+        td
+          input(type="text", name="bind_udp_port", value="#{bind_udp_port}")
+        td 服务端监听 UDP 端口
+    button(type="submit") Submit
+    
+

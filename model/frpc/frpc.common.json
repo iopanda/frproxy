@@ -1,0 +1,41 @@
+{
+    "server_addr": "0.0.0.0",
+    "server_port": "7000",
+    "http_proxy": "",
+    "log_file": "./frpc.log",
+    "log_level": "info",
+    "log_max_days": "3",
+    "disable_log_color": "FALSE",
+    "pool_count": "0",
+    "user": "",
+    "dns_server": "",
+    "login_fail_exit": "TRUE",
+    "protocol": "tcp",
+    "tls_enable": "FALSE",
+    "tls_cert_file": "",
+    "tls_key_file": "",
+    "tls_trusted_ca_file": "",
+    "tls_server_name": "",
+    "heartbeat_interval": "30",
+    "heartbeat_timeout": "90",
+    "udp_packet_size": "1500",
+    "start": "",
+    "auth": {
+        "authentication_method": "token",
+        "authenticate_heartbeats": "FALSE",
+        "authenticate_new_work_conns": "FALSE",
+        "token": "",
+        "oidc_client_id": "",
+        "oidc_client_secret": "",
+        "oidc_audience": "",
+        "oidc_token_endpoint_url": ""
+    },
+    "ui": {
+        "admin_addr": "0.0.0.0",
+        "admin_port": "0",
+        "admin_user": "",
+        "admin_pwd": "",
+        "asserts_dir": ""
+    },
+    "proxy": []
+}

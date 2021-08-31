@@ -1,0 +1,66 @@
+{
+    "proxy": [
+        {
+            "id": "web",
+            "type": "tcp|udp|http",
+            "local_ip": "127.0.0.1",
+            "local_port": 80,
+            "remote_port": 6000
+        },
+        {
+            "id": "",
+            "type": "tcp",
+            "use_encryption": "FALSE",
+            "use_compression": "FALSE",
+            "proxy_protocol_version": "",
+            "bandwidth_limit": "",
+            
+            "local":{
+                "local_ip": "127.0.0.1",
+                "local_port": "",
+                "plugin": "",
+                "plugin_params": ""
+            },
+            "health": {
+                "group": "",
+                "group_key": "",
+                "health_check_type": "",
+                "health_check_timeout_s": "3",
+                "health_check_max_failed": "1",
+                "health_check_interval_s": "10",
+                "health_check_url": ""
+            },
+            "tcp":{
+                "remote_port": ""
+            },
+            "udp":{
+                "remote_port": ""
+            },
+            "http":{
+                "custom_domains": "",
+                "subdomain": "",
+                "locations": "",
+                "http_user": "",
+                "http_pwd": "",
+                "host_header_rewrite": "",
+                "headers": ""
+            },
+            "https": {
+                "custom_domains": "",
+                "subdomain": ""
+            },            
+            "stcp": {
+                "role": "server",
+                "sk": ""
+            },
+            "sudp": {
+                "role": "server",
+                "sk": ""
+            },
+            "xtcp": {
+                "role": "server",
+                "sk": ""
+            }
+        }
+    ]
+}
